@@ -1,0 +1,32 @@
+{
+    "name": "robvh/amazon-kinesis-client-php",
+    "type": "library",
+    "description": "This package provides an interface to the Amazon Kinesis Client Library (KCL) MultiLangDaemon for PHP.",
+    "keywords": ["kinesis", "kcl", "streams"],
+    "homepage": "https://github.com/RobvH/php-kcl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob van Hoose",
+            "email": "RobvH@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/robvh/state-machine"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "winzou/state-machine": "^0.4.77"
+    },
+    "autoload": {
+        "psr-4": {
+            "Robvh\\Kcl\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    }
+}
